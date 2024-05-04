@@ -8,3 +8,5 @@
 <li>Add items to cart using React-Redux and Redux-Toolkit.</li>
 <li>Cart - page for final billing.</li>
 </ul>
+
+#checking git and github

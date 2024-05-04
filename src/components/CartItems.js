@@ -10,7 +10,7 @@ const CartItems = ({ data }) => {
   };
   if (data.card) {
     return (
-      <div className="my-4">
+      <div className="border-b-2">
         <ul className="flex justify-between px-5">
           <li className="font-mono font-bold text-xl w-7/12">
             {data.card.info.name}
@@ -26,7 +26,7 @@ const CartItems = ({ data }) => {
             <img
               src={REST_URL + data.card.info.imageId}
               alt="cart item"
-              className="h-28 w-36 rounded-lg"
+              className="h-28 w-36 rounded-lg mb-4"
             />
             <div className="absolute flex top-24 left-12 bg-black text-white rounded-l-lg rounded-r-lg ">
               <li>

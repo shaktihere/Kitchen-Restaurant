@@ -10,7 +10,7 @@ const Cart = () => {
     dispatch(clearCart());
   };
   return (
-    <div className="text-center m-4 p-4 mx-96">
+    <div className="m-4 p-4 w-1/2 text-center m-auto">
       <h1 className="font-bold text-3xl mb-5">Cart ({cart.length} items)</h1>
       <div className="text-left">
         {cart.map((item) => {
