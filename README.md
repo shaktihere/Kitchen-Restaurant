@@ -13,6 +13,7 @@
 
 ```
 git clone https://github.com/shaktihere/Restaurant-Delivery.git
+```
+
 npm i
 npm run start
-```
