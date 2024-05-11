@@ -9,6 +9,8 @@ const Header = () => {
   const onlineStatus = useOnlineStatus();
   const { loggedInUser } = useContext(UserContext);
   const cartItems = useSelector((store) => store.cart.items); //subscribing to out store using Selector Hook
+  let len = 0;
+  cartItems.map((item) => (len += item.card.info.count));
   return (
     <div className="flex sticky top-0 z-10 ml-1 mr-1 border bg-white rounded-b-sm mb-6 shadow-md">
       <div className=" ">
@@ -23,25 +25,25 @@ const Header = () => {
       <div className="flex items-center ml-24">
         <ul className="flex">
           <div className="flex justify-between">
-            <li className="px-4  mr-12 font-sans text-lg font-bold">
+            <li className="px-4  mr-12 font-sans text-md font-bold">
               {onlineStatus ? "✅" : "❌"} Internet Working
             </li>
             <div className="flex justify-between">
-              <li className="px-4 mr-8 text-lg font-bold">
+              <li className="px-4 mr-8 text-md font-bold">
                 <Link to="/">🏠 Home</Link>
               </li>
-              <li className="px-4 mr-8 text-lg font-bold">
+              <li className="px-4 mr-8 text-md font-bold">
                 <Link to="/about">ℹ️ About Us</Link>
               </li>
-              <li className="px-4 mr-8 text-lg font-bold">
+              <li className="px-4 mr-8 text-md font-bold">
                 <Link to="/contact">☎️ Contact Us</Link>
               </li>
-              <li className="px-4 mr-8  text-lg font-bold">
+              <li className="px-4 mr-8  text-md font-bold">
                 <Link to="/grocery">🌽 Grocery</Link>
               </li>
             </div>
             <div className="flex justify-between">
-              <li className="px-4 mr-12 text-lg font-bold">
+              <li className="px-4 mr-12 text-md font-bold">
                 <button
                   className="login"
                   onClick={() => {
@@ -52,13 +54,14 @@ const Header = () => {
                   👤 {login}
                 </button>
               </li>
-              <li className="px-4 font-bold mr-12 text-lg font-bold">
+              <li className="px-4 font-bold mr-12 text-md font-bold">
                 {loggedInUser}
               </li>
             </div>
             <Link to="/cart">
-              <li className="px-4 text-3xl font-bold ml-4">
-                🛒{cartItems.length}
+              <li className="px-4 text-lg font-bold ml-4">
+                <span className="text-3xl">🛒</span>
+                {len}
               </li>
             </Link>
           </div>

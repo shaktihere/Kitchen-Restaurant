@@ -22,6 +22,9 @@ const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
     }
   };
   if (value.title && value.itemCards) {
+    value.itemCards.map((item) => {
+      item.card.info["count"] = 0;
+    });
     return (
       <div>
         <div className="headerMenu pl-3 pr-3 mt-3 mb-3 border-b border-gray-100 shadow-sm shadow-gray-200">
