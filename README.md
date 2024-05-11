@@ -15,5 +15,16 @@
 git clone https://github.com/shaktihere/Restaurant-Delivery.git
 ```
 
+Downloading the repo on local.
+
+```
 npm i
+```
+
+Installing node modules requied in the application.
+
+```
 npm run start
+```
+
+Script to run the application.
