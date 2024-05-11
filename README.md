@@ -11,20 +11,20 @@
 
 ### Seeting up the application on `local`
 
-```
-git clone https://github.com/shaktihere/Restaurant-Delivery.git
-```
-
 Downloading the repo on local.
 
 ```
-npm i
+git clone https://github.com/shaktihere/Restaurant-Delivery.git
 ```
 
 Installing node modules requied in the application.
 
 ```
-npm run start
+npm i
 ```
 
 Script to run the application.
+
+```
+npm run start
+```
