@@ -1,6 +1,6 @@
 # Restaurant Delivery
 
-## Key Features:-
+## Key Features
 
 <ul>
 <li>Discover nearby restaurants by accessing real-time data through the Swiggy API.</li>
