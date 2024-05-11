@@ -11,8 +11,6 @@
 
 ### Seeting up the application on `local`
 
-<ul>
-<li>Git clone `git clone https://github.com/shaktihere/Restaurant-Delivery.git`</li>
-<li>`npm i` - to get all the neccessary node modules used in the application</li>
-<li>`npm run start` - using the script to run the application</li>
-</ul>
+Git clone `git clone https://github.com/shaktihere/Restaurant-Delivery.git`
+`npm i` - to get all the neccessary node modules used in the application
+`npm run start` - using the script to run the application
