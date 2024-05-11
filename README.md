@@ -1,6 +1,6 @@
-# Welcome to Kitchen-Restaurant
+# Restaurant Delivery
 
-# Key Features:-
+## Key Features:-
 
 <ul>
 <li>Discover nearby restaurants by accessing real-time data through the Swiggy API.</li>
@@ -9,4 +9,10 @@
 <li>Cart - page for final billing.</li>
 </ul>
 
-#checking git and github
+### Seeting up the application on `local`
+
+<ul>
+<li>Git clone `git clone https://github.com/shaktihere/Restaurant-Delivery.git`</li>
+<li>`npm i` - to get all the neccessary node modules used in the application</li>
+<li>`npm run start` - using the script to run the application</li>
+</ul>
